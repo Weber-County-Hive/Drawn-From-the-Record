@@ -1,16 +1,7 @@
-# The Utah Hive Comics
+# Drawn From the Record — The Utah Hive Comics
 
-A static, mobile-friendly comics gallery built for GitHub Pages.
+Static GitHub Pages gallery. No build step required.
 
-## Publish on GitHub Pages
+43 recovered images, including labeled earlier versions. Full images are in assets/; titles and topics are in cartoon-catalog.json. Two withdrawn transparency versions are recorded in the catalog but deliberately not published as images.
 
-1. Upload everything in this folder to a GitHub repository.
-2. Open **Settings → Pages** in the repository.
-3. Under **Build and deployment**, select **Deploy from a branch**.
-4. Choose the `main` branch and `/ (root)`, then click **Save**.
-
-The site uses only HTML, CSS, and JavaScript. No build step is required.
-
-## Add another comic
-
-Place the image in `assets/`, then copy one of the `<article class="comic-card">` blocks in `index.html`. Update its image filename, title, caption, alt text, and `data-tags`.
+To add a cartoon, place its image in assets/, add its labeled article in index.html, and add its metadata to cartoon-catalog.json. Keep topic tags consistent with the filter buttons.

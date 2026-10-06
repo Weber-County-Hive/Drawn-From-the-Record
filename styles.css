@@ -3,3 +3,6 @@
 @media (max-width:900px){nav>a:not(.nav-button){display:none}.intro{align-items:flex-start}.issue-stamp{width:150px;height:150px}.issue-stamp strong{font-size:2rem}.comic-card,.comic-card.featured,.comic-card.wide{grid-column:span 6}.featured .comic-image,.wide .comic-image,.comic-image{height:390px}.about{grid-template-columns:1fr;gap:10px}}
 @media (max-width:620px){.site-header{height:76px;padding:0 14px}.brand small{display:none}.brand-mark{width:42px;height:42px}.nav-button{padding:7px 10px}.intro{min-height:auto;display:block;padding:55px 20px}.intro h1{font-size:3.5rem}.issue-stamp{display:none}.gallery-section{padding:55px 16px}.section-heading{align-items:start}.comic-card,.comic-card.featured,.comic-card.wide{grid-column:1/-1;box-shadow:5px 5px 0 var(--ink)}.featured .comic-image,.wide .comic-image,.comic-image{height:auto;aspect-ratio:4/5}.about{padding:55px 20px}footer{flex-direction:column;padding:28px 20px}.dialog-bar h2{font-size:.86rem;max-width:80%}}
 @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+
+/* Show the whole cartoon in every preview. */
+.comic-image img{object-fit:contain}.comic-info h3{font-size:1.3rem}.tag{display:inline-block}.dialog-bar{height:auto;min-height:64px;gap:12px}.dialog-bar h2{padding:12px 0}.dialog-bar button{flex-shrink:0}

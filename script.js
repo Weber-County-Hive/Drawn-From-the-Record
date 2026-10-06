@@ -15,7 +15,7 @@ filterButtons.forEach(button => button.addEventListener('click', () => {
     card.hidden = !matches;
     if (matches) visible++;
   });
-  count.textContent = `${visible} comic${visible === 1 ? '' : 's'}`;
+  count.textContent = `${visible} image${visible === 1 ? '' : 's'}`;
 }));
 
 const dialog = document.querySelector('#lightbox');
