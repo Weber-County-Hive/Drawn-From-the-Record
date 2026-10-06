@@ -6,3 +6,5 @@
 
 /* Show the whole cartoon in every preview. */
 .comic-image img{object-fit:contain}.comic-info h3{font-size:1.3rem}.tag{display:inline-block}.dialog-bar{height:auto;min-height:64px;gap:12px}.dialog-bar h2{padding:12px 0}.dialog-bar button{flex-shrink:0}
+
+.comic-image img, #lightbox-image{-webkit-user-drag:none;user-select:none}.image-error{padding:20px;color:#b92f28;font-weight:700}
