@@ -6,13 +6,39 @@
   <meta name="description" content="Utah politics, public records, and accountability—drawn by Weber County Hive.">
   <meta name="theme-color" content="#f4c43d">
   <title>Weber County Hive | Comics</title>
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath fill='%23f4c43d' d='M32 3l25 14v30L32 61 7 47V17z'/%3E%3Cpath fill='%231b1b18' d='M24 19h16v7h-4v19h-8V26h-4z'/%3E%3C/svg%3E">
+  <link rel="icon" type="image/png" href="hive-bee.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Libre+Franklin:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css?v=20261006">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&display=swap" rel="stylesheet">
+  <style>
+.hb-bar{background:#0d0b0a;border-bottom:1px solid #3a2f1c;padding:10px 20px;}
+.hb-bar a{display:flex;align-items:center;gap:12px;max-width:1100px;margin:0 auto;text-decoration:none;}
+.hb-bar img{width:52px;height:52px;border-radius:4px;display:block;flex:none;}
+.hb-name{font-family:'Cinzel','Trajan Pro',Georgia,serif;color:#d4af37;font-size:16px;letter-spacing:.14em;text-transform:uppercase;line-height:1.2;display:block;}
+.hb-sub{font-family:Georgia,serif;font-style:italic;color:#b8956a;font-size:12.5px;letter-spacing:.02em;display:block;margin-top:2px;}
+.hb-foot{background:#0d0b0a;color:#b8956a;text-align:center;padding:26px 20px 30px;font-family:Georgia,serif;}
+.hb-foot img{width:52px;height:52px;display:block;margin:0 auto 10px;}
+.hb-foot .hb-name{font-size:14px;}
+.hb-foot .hb-tag{font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:#8a7650;margin-top:8px;display:block;}
+@media(max-width:600px){.hb-bar{padding:8px 16px}.hb-bar img{width:38px;height:38px}.hb-name{font-size:13px}.hb-sub{font-size:11.5px}}
+
+.story-links{margin:12px 0 0;padding:0;list-style:none;font-size:.95rem}
+.story-links li{margin:6px 0}
+.story-links a{font-weight:800;text-decoration-thickness:2px;text-decoration-color:var(--honey)}
+.story-links a::after{content:" \2192"}
+.posted{font-size:.9rem;font-weight:700;color:var(--muted);margin-top:14px}
+.more-work{padding:60px clamp(20px,5vw,72px);background:var(--paper);border-top:3px solid var(--ink)}
+.more-work h2{font-family:"Archivo Black";font-size:clamp(1.8rem,4vw,3rem);margin:4px 0 20px}
+.more-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.more-grid a{display:block;border:2px solid var(--ink);background:var(--white);padding:16px 18px;text-decoration:none;box-shadow:4px 4px 0 var(--ink)}
+.more-grid b{display:block;font-family:"Archivo Black";font-size:1.05rem}
+.more-grid span{color:var(--muted);font-size:.92rem}
+  </style>
 </head>
 <body>
+<div class="hb-bar"><a href="https://webercountyhive.substack.com/" target="_blank" rel="noopener"><img src="uhp-badge.png" alt="Utah Hive Politics logo"><span><span class="hb-name">Utah Hive Politics</span><span class="hb-sub">from the publisher of The Weber County Hive</span></span></a></div>
   <header class="site-header">
     <a class="brand" href="#top" aria-label="Weber County Hive comics home">
       <span class="brand-mark" aria-hidden="true">UH</span>
@@ -20,6 +46,7 @@
     </a>
     <nav aria-label="Main navigation">
       <a href="#comics">Comics</a>
+      <a href="#stories">Stories</a>
       <a href="#about">About</a>
       <a class="nav-button" href="mailto:webercountyhive@gmail.com?subject=Comic%20idea">Send a tip</a>
     </nav>
@@ -31,6 +58,7 @@
         <p class="eyebrow">Editorial cartoons • Utah politics</p>
         <h1 id="page-title">THE RECORD,<br><span>DRAWN OUT.</span></h1>
         <p class="lede">Our comics turn complicated public records into pictures that are harder to ignore.</p>
+        <p class="posted">Posted Sept. 25, 2026 · Updated Oct. 17, 2026</p>
       </div>
       <div class="issue-stamp" aria-label="Independent Utah reporting">
         <span>INDEPENDENT</span><strong>UTAH</strong><span>REPORTING</span>
@@ -40,7 +68,7 @@
     <section class="gallery-section" id="comics" aria-labelledby="gallery-title">
       <div class="section-heading">
         <div><p class="kicker">The collection</p><h2 id="gallery-title">The cartoon collection</h2></div>
-        <p id="result-count" aria-live="polite">28 cartoons</p>
+        <p id="result-count" aria-live="polite">29 cartoons</p>
       </div>
 
       <div class="filters" aria-label="Filter comics by topic">
@@ -56,205 +84,227 @@
 
       <div class="comic-grid">
         <article class="comic-card" data-tags="government">
-          <button class="comic-image" data-image="capitol-fortune-a-new-authority.png" data-title="Capitol Fortune A New Authority" aria-label="Open Capitol Fortune A New Authority">
-            <img src="capitol-fortune-a-new-authority.png" alt="Capitol Fortune A New Authority — Editorial cartoon" loading="lazy"><span class="expand">View full comic ↗</span>
+          <button class="comic-image" data-image="capitol-fortune-a-new-authority.png" data-title="Capitol Fortunes: Today’s Utah Prediction" aria-label="Open Capitol Fortunes: Today’s Utah Prediction">
+            <img src="capitol-fortune-a-new-authority.png" alt="Capitol Fortunes: Today’s Utah Prediction — Editorial cartoon" loading="lazy"><span class="expand">View full comic ↗</span>
           </button>
-          <div class="comic-info"><span class="tag">Weber County Hive • Editorial cartoon</span><h3>Capitol Fortune A New Authority</h3></div>
+          <div class="comic-info"><span class="tag">Weber County Hive • Editorial cartoon</span><h3>Capitol Fortunes: Today’s Utah Prediction</h3><ul class="story-links"><li><a href="https://weber-county-hive.github.io/Unelected-Power/">Read the story: Unelected Power: who holds power without an election</a></li></ul></div>
         </article>
 
         <article class="comic-card" data-tags="privacy">
           <button class="comic-image" data-image="honest-abe-s-modern-stop.png" data-title="Honest Abe’s Modern Stop" aria-label="Open Honest Abe’s Modern Stop">
             <img src="honest-abe-s-modern-stop.png" alt="Honest Abe’s Modern Stop — Editorial cartoon" loading="lazy"><span class="expand">View full comic ↗</span>
           </button>
-          <div class="comic-info"><span class="tag">Weber County Hive • Editorial cartoon</span><h3>Honest Abe’s Modern Stop</h3></div>
+          <div class="comic-info"><span class="tag">Weber County Hive • Editorial cartoon</span><h3>Honest Abe’s Modern Stop</h3><ul class="story-links"><li><a href="https://weber-county-hive.github.io/Surveillance/weber-hive-camera-said-match.html">Read the story: The Camera Said "Match." Police Drew Their Guns.</a></li></ul></div>
+        </article>
+
+        <article class="comic-card" data-tags="privacy">
+          <button class="comic-image" data-image="founders-inspect-utah-s-plate-reader.png" data-title="The Founders Visit the Tollbooth" aria-label="Open The Founders Visit the Tollbooth">
+            <img src="founders-inspect-utah-s-plate-reader.png" alt="The Founders Visit the Tollbooth — Editorial cartoon" loading="lazy"><span class="expand">View full comic ↗</span>
+          </button>
+          <div class="comic-info"><span class="tag">Weber County Hive • Editorial cartoon</span><h3>The Founders Visit the Tollbooth</h3><ul class="story-links"><li><a href="https://weber-county-hive.github.io/Surveillance/weber-hive-nobody-approves-each-search.html">Read the story: Nobody Approves Each Search</a></li></ul></div>
         </article>
 
         <article class="comic-card" data-tags="mirror housing">
-          <button class="comic-image" data-image="mirror-mirror-crowning-the-housing-czar.png" data-title="Housing Czar Jester: This Is All a Joke" aria-label="Open Housing Czar Jester: This Is All a Joke">
-            <img src="mirror-mirror-crowning-the-housing-czar.png" alt="Housing Czar Jester: This Is All a Joke — Editorial cartoon" loading="lazy"><span class="expand">View full comic ↗</span>
+          <button class="comic-image" data-image="crowning-the-housing-czar.png" data-title="Mirror, Mirror: The Crowning of the Housing Czar" aria-label="Open Mirror, Mirror: The Crowning of the Housing Czar">
+            <img src="crowning-the-housing-czar.png" alt="Mirror, Mirror: The Crowning of the Housing Czar — Editorial cartoon" loading="lazy"><span class="expand">View full comic ↗</span>
           </button>
-          <div class="comic-info"><span class="tag">Weber County Hive • Editorial cartoon</span><h3>Housing Czar Jester: This Is All a Joke</h3></div>
+          <div class="comic-info"><span class="tag">Weber County Hive • Editorial cartoon</span><h3>Mirror, Mirror: The Crowning of the Housing Czar</h3><ul class="story-links"><li><a href="https://weber-county-hive.github.io/Unelected-Power/steve-waldrip.html">Read the story: Steve Waldrip: Unelected Power</a></li><li><a href="https://weber-county-hive.github.io/Unelected-Power/">Read the story: Unelected Power</a></li></ul></div>
         </article>
 
         <article class="comic-card" data-tags="mirror">
-          <button class="comic-image" data-image="mirror-mirror-fiscal-accountability.png" data-title="Mirror Mirror Fiscal Accountability" aria-label="Open Mirror Mirror Fiscal Accountability">
-            <img src="mirror-mirror-fiscal-accountability.png" alt="Mirror Mirror Fiscal Accountability — Editorial cartoon" loading="lazy"><span class="expand">View full comic ↗</span>
+          <button class="comic-image" data-image="mirror-mirror-fiscal-accountability.png" data-title="Mirror Mirror: Fiscal Accountability" aria-label="Open Mirror Mirror: Fiscal Accountability">
+            <img src="mirror-mirror-fiscal-accountability.png" alt="Mirror Mirror: Fiscal Accountability — Editorial cartoon" loading="lazy"><span class="expand">View full comic ↗</span>
           </button>
-          <div class="comic-info"><span class="tag">Weber County Hive • Editorial cartoon</span><h3>Mirror Mirror Fiscal Accountability</h3></div>
+          <div class="comic-info"><span class="tag">Weber County Hive • Editorial cartoon</span><h3>Mirror Mirror: Fiscal Accountability</h3><ul class="story-links"><li><a href="https://weber-county-hive.github.io/Bill-Tracker/weber-hive-hb545.html">Read the story: H.B. 545 (2026) case file</a></li><li><a href="https://weber-county-hive.github.io/audits/weber-hive-goed-audit-2026-18.html">Read the story: The GOED audit</a></li></ul></div>
         </article>
 
         <article class="comic-card" data-tags="mirror">
-          <button class="comic-image" data-image="mirror-mirror-local-control.png" data-title="Mirror Mirror Local Control" aria-label="Open Mirror Mirror Local Control">
-            <img src="mirror-mirror-local-control.png" alt="Mirror Mirror Local Control — Editorial cartoon" loading="lazy"><span class="expand">View full comic ↗</span>
+          <button class="comic-image" data-image="mirror-mirror-local-control.png" data-title="Mirror Mirror: Local Control" aria-label="Open Mirror Mirror: Local Control">
+            <img src="mirror-mirror-local-control.png" alt="Mirror Mirror: Local Control — Editorial cartoon" loading="lazy"><span class="expand">View full comic ↗</span>
           </button>
-          <div class="comic-info"><span class="tag">Weber County Hive • Editorial cartoon</span><h3>Mirror Mirror Local Control</h3></div>
+          <div class="comic-info"><span class="tag">Weber County Hive • Editorial cartoon</span><h3>Mirror Mirror: Local Control</h3><ul class="story-links"><li><a href="https://weber-county-hive.github.io/Unelected-Power/steve-waldrip.html">Read the story: Steve Waldrip: Unelected Power</a></li></ul></div>
         </article>
 
         <article class="comic-card" data-tags="mirror water">
-          <button class="comic-image" data-image="mirror-mirror-the-water-test.png" data-title="Mirror Mirror The Water Test" aria-label="Open Mirror Mirror The Water Test">
-            <img src="mirror-mirror-the-water-test.png" alt="Mirror Mirror The Water Test — Editorial cartoon" loading="lazy"><span class="expand">View full comic ↗</span>
+          <button class="comic-image" data-image="mirror-mirror-the-water-test.png" data-title="Mirror, Mirror: The Water Test" aria-label="Open Mirror, Mirror: The Water Test">
+            <img src="mirror-mirror-the-water-test.png" alt="Mirror, Mirror: The Water Test — Editorial cartoon" loading="lazy"><span class="expand">View full comic ↗</span>
           </button>
-          <div class="comic-info"><span class="tag">Weber County Hive • Editorial cartoon</span><h3>Mirror Mirror The Water Test</h3></div>
+          <div class="comic-info"><span class="tag">Weber County Hive • Editorial cartoon</span><h3>Mirror, Mirror: The Water Test</h3><ul class="story-links"><li><a href="https://weber-county-hive.github.io/Bill-Tracker/weber-hive-hb491.html">Read the story: H.B. 491 (2023) case file</a></li><li><a href="https://weber-county-hive.github.io/followthedeed/weber-hive-schultz-water-rights.html">Read the story: The Applicant Holds Those Rights</a></li></ul></div>
         </article>
 
         <article class="comic-card" data-tags="mirror housing">
-          <button class="comic-image" data-image="mirror-mirror-utah-s-housing-czar.png" data-title="Mirror Mirror: Utah’s Housing Czar" aria-label="Open Mirror Mirror: Utah’s Housing Czar">
-            <img src="mirror-mirror-utah-s-housing-czar.png" alt="Mirror Mirror: Utah’s Housing Czar — Editorial cartoon" loading="lazy"><span class="expand">View full comic ↗</span>
+          <button class="comic-image" data-image="mirror-mirror-utah-s-housing-czar.png" data-title="Mirror, Mirror: The Housing Czar" aria-label="Open Mirror, Mirror: The Housing Czar">
+            <img src="mirror-mirror-utah-s-housing-czar.png" alt="Mirror, Mirror: The Housing Czar — Editorial cartoon" loading="lazy"><span class="expand">View full comic ↗</span>
           </button>
-          <div class="comic-info"><span class="tag">Weber County Hive • Editorial cartoon</span><h3>Mirror Mirror: Utah’s Housing Czar</h3></div>
+          <div class="comic-info"><span class="tag">Weber County Hive • Editorial cartoon</span><h3>Mirror, Mirror: The Housing Czar</h3><ul class="story-links"><li><a href="https://weber-county-hive.github.io/Unelected-Power/steve-waldrip.html">Read the story: Steve Waldrip: Unelected Power</a></li></ul></div>
         </article>
 
         <article class="comic-card" data-tags="mirror">
-          <button class="comic-image" data-image="mirror-record-and-quiet-reflection.png" data-title="Mirror Mirror: What Is Happening to My Vote?" aria-label="Open Mirror Mirror: What Is Happening to My Vote?">
-            <img src="mirror-record-and-quiet-reflection.png" alt="Mirror Mirror: What Is Happening to My Vote? — Editorial cartoon" loading="lazy"><span class="expand">View full comic ↗</span>
+          <button class="comic-image" data-image="mirror-record-and-quiet-reflection.png" data-title="Mirror, Mirror: What Is Happening to My Vote at All?" aria-label="Open Mirror, Mirror: What Is Happening to My Vote at All?">
+            <img src="mirror-record-and-quiet-reflection.png" alt="Mirror, Mirror: What Is Happening to My Vote at All? — Editorial cartoon" loading="lazy"><span class="expand">View full comic ↗</span>
           </button>
-          <div class="comic-info"><span class="tag">Weber County Hive • Editorial cartoon</span><h3>Mirror Mirror: What Is Happening to My Vote?</h3></div>
+          <div class="comic-info"><span class="tag">Weber County Hive • Editorial cartoon</span><h3>Mirror, Mirror: What Is Happening to My Vote at All?</h3></div>
         </article>
 
         <article class="comic-card" data-tags="privacy">
-          <button class="comic-image" data-image="out-of-state-eyes-on-utah-streets.png" data-title="Out Of State Eyes On Utah Streets" aria-label="Open Out Of State Eyes On Utah Streets">
-            <img src="out-of-state-eyes-on-utah-streets.png" alt="Out Of State Eyes On Utah Streets — Editorial cartoon" loading="lazy"><span class="expand">View full comic ↗</span>
+          <button class="comic-image" data-image="out-of-state-eyes-on-utah-streets.png" data-title="The Out-of-State Commute Watch" aria-label="Open The Out-of-State Commute Watch">
+            <img src="out-of-state-eyes-on-utah-streets.png" alt="The Out-of-State Commute Watch — Editorial cartoon" loading="lazy"><span class="expand">View full comic ↗</span>
           </button>
-          <div class="comic-info"><span class="tag">Weber County Hive • Editorial cartoon</span><h3>Out Of State Eyes On Utah Streets</h3></div>
+          <div class="comic-info"><span class="tag">Weber County Hive • Editorial cartoon</span><h3>The Out-of-State Commute Watch</h3><ul class="story-links"><li><a href="https://weber-county-hive.github.io/Surveillance/weber-hive-5-million-searches.html">Read the story: Ten Cameras, Five Million Searches</a></li></ul></div>
         </article>
 
         <article class="comic-card" data-tags="privacy">
-          <button class="comic-image" data-image="panel-four-data-sharing-rules-corrected.png" data-title="Panel Four Data Sharing Rules Corrected" aria-label="Open Panel Four Data Sharing Rules Corrected">
-            <img src="panel-four-data-sharing-rules-corrected.png" alt="Panel Four Data Sharing Rules Corrected — Earlier / alternate version" loading="lazy"><span class="expand">View full comic ↗</span>
+          <button class="comic-image" data-image="panel-four-data-sharing-rules-corrected.png" data-title="Carpenter’s Unfinished Road Map" aria-label="Open Carpenter’s Unfinished Road Map">
+            <img src="panel-four-data-sharing-rules-corrected.png" alt="Carpenter’s Unfinished Road Map — Earlier / alternate version" loading="lazy"><span class="expand">View full comic ↗</span>
           </button>
-          <div class="comic-info"><span class="tag">Weber County Hive • Editorial cartoon</span><h3>Panel Four Data Sharing Rules Corrected</h3></div>
+          <div class="comic-info"><span class="tag">Weber County Hive • Editorial cartoon</span><h3>Carpenter’s Unfinished Road Map</h3><ul class="story-links"><li><a href="https://weber-county-hive.github.io/Surveillance/">Read the story: The Surveillance series</a></li></ul></div>
         </article>
 
         <article class="comic-card" data-tags="privacy">
-          <button class="comic-image" data-image="receipts-routes-and-a-voided-summons.png" data-title="The Innocence Homework Assignment — Receipts and Voided Summons" aria-label="Open The Innocence Homework Assignment — Receipts and Voided Summons">
+          <button class="comic-image" data-image="receipts-routes-and-a-voided-summons.png" data-title="The Innocence Homework Assignment" aria-label="Open The Innocence Homework Assignment">
             <img src="receipts-routes-and-a-voided-summons.png" alt="The Innocence Homework Assignment — Receipts and Voided Summons — Editorial cartoon" loading="lazy"><span class="expand">View full comic ↗</span>
           </button>
-          <div class="comic-info"><span class="tag">Weber County Hive • Editorial cartoon</span><h3>The Innocence Homework Assignment — Receipts and Voided Summons</h3></div>
+          <div class="comic-info"><span class="tag">Weber County Hive • Editorial cartoon</span><h3>The Innocence Homework Assignment</h3><ul class="story-links"><li><a href="https://weber-county-hive.github.io/Surveillance/weber-hive-camera-said-match.html">Read the story: The Camera Said "Match." Police Drew Their Guns.</a></li></ul></div>
         </article>
 
         <article class="comic-card" data-tags="government">
           <button class="comic-image" data-image="state-law-blocks-local-drilling-fee.png" data-title="S.B. 207: State Law Blocks the Local Drilling Fee" aria-label="Open S.B. 207: State Law Blocks the Local Drilling Fee">
             <img src="state-law-blocks-local-drilling-fee.png" alt="S.B. 207: State Law Blocks the Local Drilling Fee — Editorial cartoon" loading="lazy"><span class="expand">View full comic ↗</span>
           </button>
-          <div class="comic-info"><span class="tag">Weber County Hive • Editorial cartoon</span><h3>S.B. 207: State Law Blocks the Local Drilling Fee</h3></div>
+          <div class="comic-info"><span class="tag">Weber County Hive • Editorial cartoon</span><h3>S.B. 207: State Law Blocks the Local Drilling Fee</h3><ul class="story-links"><li><a href="https://weber-county-hive.github.io/Bill-Tracker/weber-hive-sb207.html">Read the story: S.B. 207 case file</a></li></ul></div>
         </article>
 
         <article class="comic-card" data-tags="government">
-          <button class="comic-image" data-image="strangers-paper-trails-bond-approval.png" data-title="Strangers Paper Trails Bond Approval" aria-label="Open Strangers Paper Trails Bond Approval">
-            <img src="strangers-paper-trails-bond-approval.png" alt="Strangers Paper Trails Bond Approval — Editorial cartoon" loading="lazy"><span class="expand">View full comic ↗</span>
+          <button class="comic-image" data-image="strangers-paper-trails-bond-approval.png" data-title="The Stranger Meeting" aria-label="Open The Stranger Meeting">
+            <img src="strangers-paper-trails-bond-approval.png" alt="The Stranger Meeting — Editorial cartoon" loading="lazy"><span class="expand">View full comic ↗</span>
           </button>
-          <div class="comic-info"><span class="tag">Weber County Hive • Editorial cartoon</span><h3>Strangers Paper Trails Bond Approval</h3></div>
+          <div class="comic-info"><span class="tag">Weber County Hive • Editorial cartoon</span><h3>The Stranger Meeting</h3><ul class="story-links"><li><a href="https://weber-county-hive.github.io/PIDS-Utah/">Read the story: PID Research</a></li></ul></div>
         </article>
 
         <article class="comic-card" data-tags="government">
-          <button class="comic-image" data-image="stratos-family-reunion-in-hansel-valley.png" data-title="Stratos Family Reunion In Hansel Valley" aria-label="Open Stratos Family Reunion In Hansel Valley">
-            <img src="stratos-family-reunion-in-hansel-valley.png" alt="Stratos Family Reunion In Hansel Valley — Editorial cartoon" loading="lazy"><span class="expand">View full comic ↗</span>
+          <button class="comic-image" data-image="stratos-family-reunion-in-hansel-valley.png" data-title="The Stratos ‘Family Reunion’" aria-label="Open The Stratos ‘Family Reunion’">
+            <img src="stratos-family-reunion-in-hansel-valley.png" alt="The Stratos ‘Family Reunion’ — Editorial cartoon" loading="lazy"><span class="expand">View full comic ↗</span>
           </button>
-          <div class="comic-info"><span class="tag">Weber County Hive • Editorial cartoon</span><h3>Stratos Family Reunion In Hansel Valley</h3></div>
+          <div class="comic-info"><span class="tag">Weber County Hive • Editorial cartoon</span><h3>The Stratos ‘Family Reunion’</h3><ul class="story-links"><li><a href="https://weber-county-hive.github.io/Data-Centers/stratos.html">Read the story: Stratos: Everything We've Reported</a></li></ul></div>
         </article>
 
 
 
         <article class="comic-card" data-tags="housing">
-          <button class="comic-image" data-image="the-40-year-dream-home-trap.png" data-title="The 40 Year Dream Home Trap" aria-label="Open The 40 Year Dream Home Trap">
-            <img src="the-40-year-dream-home-trap.png" alt="The 40 Year Dream Home Trap — Editorial cartoon" loading="lazy"><span class="expand">View full comic ↗</span>
+          <button class="comic-image" data-image="the-40-year-dream-home-trap.png" data-title="The ‘Dream Home’ Trap: A PID Story" aria-label="Open The ‘Dream Home’ Trap: A PID Story">
+            <img src="the-40-year-dream-home-trap.png" alt="The ‘Dream Home’ Trap: A PID Story — Editorial cartoon" loading="lazy"><span class="expand">View full comic ↗</span>
           </button>
-          <div class="comic-info"><span class="tag">Weber County Hive • Editorial cartoon</span><h3>The 40 Year Dream Home Trap</h3></div>
+          <div class="comic-info"><span class="tag">Weber County Hive • Editorial cartoon</span><h3>The ‘Dream Home’ Trap: A PID Story</h3><ul class="story-links"><li><a href="https://weber-county-hive.github.io/PIDS-Utah/affordable-house-story.html">Read the story: The Story of the "Affordable" House</a></li></ul></div>
         </article>
 
         <article class="comic-card" data-tags="water">
           <button class="comic-image" data-image="the-garden-parole-officer.png" data-title="The Garden Parole Officer" aria-label="Open The Garden Parole Officer">
             <img src="the-garden-parole-officer.png" alt="The Garden Parole Officer — Editorial cartoon" loading="lazy"><span class="expand">View full comic ↗</span>
           </button>
-          <div class="comic-info"><span class="tag">Weber County Hive • Editorial cartoon</span><h3>The Garden Parole Officer</h3></div>
+          <div class="comic-info"><span class="tag">Weber County Hive • Editorial cartoon</span><h3>The Garden Parole Officer</h3><ul class="story-links"><li><a href="https://weber-county-hive.github.io/Great-Salt-Lake/weber-gsl-outflows-by-user.html">Read the story: Who's Actually Using the Water?</a></li></ul></div>
         </article>
 
         <article class="comic-card" data-tags="water">
-          <button class="comic-image" data-image="the-great-salt-lake-rescue.png" data-title="The Great Salt Lake Rescue" aria-label="Open The Great Salt Lake Rescue">
-            <img src="the-great-salt-lake-rescue.png" alt="The Great Salt Lake Rescue — Editorial cartoon" loading="lazy"><span class="expand">View full comic ↗</span>
+          <button class="comic-image" data-image="the-great-salt-lake-rescue.png" data-title="The Great Salt Lake ‘Rescue’" aria-label="Open The Great Salt Lake ‘Rescue’">
+            <img src="the-great-salt-lake-rescue.png" alt="The Great Salt Lake ‘Rescue’ — Editorial cartoon" loading="lazy"><span class="expand">View full comic ↗</span>
           </button>
-          <div class="comic-info"><span class="tag">Weber County Hive • Editorial cartoon</span><h3>The Great Salt Lake Rescue</h3></div>
+          <div class="comic-info"><span class="tag">Weber County Hive • Editorial cartoon</span><h3>The Great Salt Lake ‘Rescue’</h3><ul class="story-links"><li><a href="https://weber-county-hive.github.io/Great-Salt-Lake/">Read the story: The Great Salt Lake Docket</a></li></ul></div>
         </article>
 
         <article class="comic-card" data-tags="money">
-          <button class="comic-image" data-image="the-honor-system-speed-trap.png" data-title="The Honor System Speed Trap" aria-label="Open The Honor System Speed Trap">
-            <img src="the-honor-system-speed-trap.png" alt="The Honor System Speed Trap — Editorial cartoon" loading="lazy"><span class="expand">View full comic ↗</span>
+          <button class="comic-image" data-image="the-honor-system-speed-trap.png" data-title="The Honor-System Speed Trap" aria-label="Open The Honor-System Speed Trap">
+            <img src="the-honor-system-speed-trap.png" alt="The Honor-System Speed Trap — Editorial cartoon" loading="lazy"><span class="expand">View full comic ↗</span>
           </button>
-          <div class="comic-info"><span class="tag">Weber County Hive • Editorial cartoon</span><h3>The Honor System Speed Trap</h3></div>
+          <div class="comic-info"><span class="tag">Weber County Hive • Editorial cartoon</span><h3>The Honor-System Speed Trap</h3></div>
         </article>
 
         <article class="comic-card" data-tags="government">
-          <button class="comic-image" data-image="the-incorporation-math.png" data-title="The Incorporation Math" aria-label="Open The Incorporation Math">
-            <img src="the-incorporation-math.png" alt="The Incorporation Math — Editorial cartoon" loading="lazy"><span class="expand">View full comic ↗</span>
+          <button class="comic-image" data-image="appeal-to-the-state-tax-commission.png" data-title="The Incorporation Math" aria-label="Open The Incorporation Math">
+            <img src="appeal-to-the-state-tax-commission.png" alt="The Incorporation Math — Editorial cartoon" loading="lazy"><span class="expand">View full comic ↗</span>
           </button>
-          <div class="comic-info"><span class="tag">Weber County Hive • Editorial cartoon</span><h3>The Incorporation Math</h3></div>
+          <div class="comic-info"><span class="tag">Weber County Hive • Editorial cartoon</span><h3>The Incorporation Math</h3><ul class="story-links"><li><a href="https://weber-county-hive.github.io/bothsidesofthetable/weber-hive-ogden-valley-last-straw.html">Read the story: The Last Straw: How Ogden Valley City Became a City</a></li></ul></div>
         </article>
 
         <article class="comic-card" data-tags="housing">
           <button class="comic-image" data-image="the-pid-trap.png" data-title="The PID Trap" aria-label="Open The PID Trap">
             <img src="the-pid-trap.png" alt="The PID Trap — Editorial cartoon" loading="lazy"><span class="expand">View full comic ↗</span>
           </button>
-          <div class="comic-info"><span class="tag">Weber County Hive • Editorial cartoon</span><h3>The PID Trap</h3></div>
+          <div class="comic-info"><span class="tag">Weber County Hive • Editorial cartoon</span><h3>The PID Trap</h3><ul class="story-links"><li><a href="https://weber-county-hive.github.io/PIDS-Utah/">Read the story: PID Research</a></li></ul></div>
         </article>
 
         <article class="comic-card" data-tags="government">
-          <button class="comic-image" data-image="the-ranchside-data-center-surprise.png" data-title="The Ranchside Data Center Surprise" aria-label="Open The Ranchside Data Center Surprise">
-            <img src="the-ranchside-data-center-surprise.png" alt="The Ranchside Data Center Surprise — Editorial cartoon" loading="lazy"><span class="expand">View full comic ↗</span>
+          <button class="comic-image" data-image="the-ranchside-data-center-surprise.png" data-title="The Surprise Project" aria-label="Open The Surprise Project">
+            <img src="the-ranchside-data-center-surprise.png" alt="The Surprise Project — Editorial cartoon" loading="lazy"><span class="expand">View full comic ↗</span>
           </button>
-          <div class="comic-info"><span class="tag">Weber County Hive • Editorial cartoon</span><h3>The Ranchside Data Center Surprise</h3></div>
+          <div class="comic-info"><span class="tag">Weber County Hive • Editorial cartoon</span><h3>The Surprise Project</h3><ul class="story-links"><li><a href="https://weber-county-hive.github.io/Data-Centers/weber-hive-dc-stratos-land.html">Read the story: Do You Have The Land?</a></li></ul></div>
         </article>
 
         <article class="comic-card" data-tags="privacy">
-          <button class="comic-image" data-image="the-two-door-surveillance-policy.png" data-title="The Two Door Surveillance Policy" aria-label="Open The Two Door Surveillance Policy">
-            <img src="the-two-door-surveillance-policy.png" alt="The Two Door Surveillance Policy — Editorial cartoon" loading="lazy"><span class="expand">View full comic ↗</span>
+          <button class="comic-image" data-image="the-two-door-surveillance-policy.png" data-title="The Two-Door Surveillance Policy" aria-label="Open The Two-Door Surveillance Policy">
+            <img src="the-two-door-surveillance-policy.png" alt="The Two-Door Surveillance Policy — Editorial cartoon" loading="lazy"><span class="expand">View full comic ↗</span>
           </button>
-          <div class="comic-info"><span class="tag">Weber County Hive • Editorial cartoon</span><h3>The Two Door Surveillance Policy</h3></div>
+          <div class="comic-info"><span class="tag">Weber County Hive • Editorial cartoon</span><h3>The Two-Door Surveillance Policy</h3><ul class="story-links"><li><a href="https://weber-county-hive.github.io/Surveillance/weber-hive-5-million-searches.html">Read the story: Ten Cameras, Five Million Searches</a></li></ul></div>
         </article>
 
         <article class="comic-card" data-tags="money">
-          <button class="comic-image" data-image="three-pacs-one-treasurer-one-ring.png" data-title="Three PACs, One Treasurer, One Ring" aria-label="Open Three PACs, One Treasurer, One Ring">
-            <img src="three-pacs-one-treasurer-one-ring.png" alt="Three PACs, One Treasurer, One Ring — Editorial cartoon" loading="lazy"><span class="expand">View full comic ↗</span>
+          <button class="comic-image" data-image="three-pacs-one-treasurer-one-ring.png" data-title="Kyle Palmer’s One-Man PAC Circus" aria-label="Open Kyle Palmer’s One-Man PAC Circus">
+            <img src="three-pacs-one-treasurer-one-ring.png" alt="Kyle Palmer’s One-Man PAC Circus — Editorial cartoon" loading="lazy"><span class="expand">View full comic ↗</span>
           </button>
-          <div class="comic-info"><span class="tag">Weber County Hive • Editorial cartoon</span><h3>Three PACs, One Treasurer, One Ring</h3></div>
+          <div class="comic-info"><span class="tag">Weber County Hive • Editorial cartoon</span><h3>Kyle Palmer’s One-Man PAC Circus</h3><ul class="story-links"><li><a href="https://weber-county-hive.github.io/candidates2026/hd10-lesser-alvey.html">Read the story: Lesser vs. Alvey case file</a></li></ul></div>
         </article>
 
         <article class="comic-card" data-tags="government">
-          <button class="comic-image" data-image="tracing-revenue-through-mida.png" data-title="Tracing Revenue Through MIDA" aria-label="Open Tracing Revenue Through MIDA">
-            <img src="tracing-revenue-through-mida.png" alt="Tracing Revenue Through MIDA — Earlier / alternate version" loading="lazy"><span class="expand">View full comic ↗</span>
+          <button class="comic-image" data-image="tracing-revenue-through-mida.png" data-title="The Ten-Year Fire Truck Parade" aria-label="Open The Ten-Year Fire Truck Parade">
+            <img src="tracing-revenue-through-mida.png" alt="The Ten-Year Fire Truck Parade — Earlier / alternate version" loading="lazy"><span class="expand">View full comic ↗</span>
           </button>
-          <div class="comic-info"><span class="tag">Weber County Hive • Editorial cartoon</span><h3>Tracing Revenue Through MIDA</h3></div>
+          <div class="comic-info"><span class="tag">Weber County Hive • Editorial cartoon</span><h3>The Ten-Year Fire Truck Parade</h3><ul class="story-links"><li><a href="https://weber-county-hive.github.io/PIDS-Utah/stratos-ruby-pipeline-mida.html">Read the story: Box Elder County Explanation — Stratos, the Ruby Pipeline, and MIDA</a></li><li><a href="https://weber-county-hive.github.io/committees/weberhivecommitteemidaprojectareas.html">Read the story: Eight Project Areas (MIDA)</a></li></ul></div>
         </article>
 
         <article class="comic-card" data-tags="money">
-          <button class="comic-image" data-image="utah-pac-public-record-update.png" data-title="Utah Pac Public Record Update" aria-label="Open Utah Pac Public Record Update">
-            <img src="utah-pac-public-record-update.png" alt="Utah Pac Public Record Update — Earlier / alternate version" loading="lazy"><span class="expand">View full comic ↗</span>
+          <button class="comic-image" data-image="utah-pac-public-record-update.png" data-title="The $270K Pipeline" aria-label="Open The $270K Pipeline">
+            <img src="utah-pac-public-record-update.png" alt="The $270K Pipeline — Earlier / alternate version" loading="lazy"><span class="expand">View full comic ↗</span>
           </button>
-          <div class="comic-info"><span class="tag">Weber County Hive • Editorial cartoon</span><h3>Utah Pac Public Record Update</h3></div>
+          <div class="comic-info"><span class="tag">Weber County Hive • Editorial cartoon</span><h3>The $270K Pipeline</h3><ul class="story-links"><li><a href="https://weber-county-hive.github.io/Data-Centers/data-center-industry-money.html">Read the story: Data Center Industry Money in Utah Politics</a></li><li><a href="https://weber-county-hive.github.io/candidates2026/sd6-tran-neal.html">Read the story: SD-6: Tran vs. Neal</a></li></ul></div>
         </article>
 
         <article class="comic-card" data-tags="government">
           <button class="comic-image" data-image="utah-severance-tax-rerouted.png" data-title="S.B. 107: Utah Severance Tax Rerouted" aria-label="Open S.B. 107: Utah Severance Tax Rerouted">
             <img src="utah-severance-tax-rerouted.png" alt="S.B. 107: Utah Severance Tax Rerouted — Editorial cartoon" loading="lazy"><span class="expand">View full comic ↗</span>
           </button>
-          <div class="comic-info"><span class="tag">Weber County Hive • Editorial cartoon</span><h3>S.B. 107: Utah Severance Tax Rerouted</h3></div>
+          <div class="comic-info"><span class="tag">Weber County Hive • Editorial cartoon</span><h3>S.B. 107: Utah Severance Tax Rerouted</h3><ul class="story-links"><li><a href="https://weber-county-hive.github.io/Bill-Tracker/weber-hive-sb107.html">Read the story: S.B. 107 case file</a></li></ul></div>
         </article>
 
         <article class="comic-card" data-tags="privacy">
-          <button class="comic-image" data-image="west-80-toward-oakland.png" data-title="West 80 Toward Oakland" aria-label="Open West 80 Toward Oakland">
-            <img src="west-80-toward-oakland.png" alt="West 80 Toward Oakland — Earlier / alternate version" loading="lazy"><span class="expand">View full comic ↗</span>
+          <button class="comic-image" data-image="west-80-toward-oakland.png" data-title="The Thanksgiving Drive Nightmare" aria-label="Open The Thanksgiving Drive Nightmare">
+            <img src="west-80-toward-oakland.png" alt="The Thanksgiving Drive Nightmare — Earlier / alternate version" loading="lazy"><span class="expand">View full comic ↗</span>
           </button>
-          <div class="comic-info"><span class="tag">Weber County Hive • Editorial cartoon</span><h3>West 80 Toward Oakland</h3></div>
+          <div class="comic-info"><span class="tag">Weber County Hive • Editorial cartoon</span><h3>The Thanksgiving Drive Nightmare</h3><ul class="story-links"><li><a href="https://weber-county-hive.github.io/Surveillance/weber-hive-camera-said-match.html">Read the story: The Camera Said "Match." Police Drew Their Guns.</a></li><li><a href="https://weber-county-hive.github.io/Surveillance/">Read the story: The Surveillance series</a></li></ul></div>
         </article>
 
         <article class="comic-card" data-tags="privacy">
-          <button class="comic-image" data-image="when-the-plate-reader-misreads.png" data-title="When The Plate Reader Misreads" aria-label="Open When The Plate Reader Misreads">
-            <img src="when-the-plate-reader-misreads.png" alt="When The Plate Reader Misreads — Editorial cartoon" loading="lazy"><span class="expand">View full comic ↗</span>
+          <button class="comic-image" data-image="when-the-plate-reader-misreads.png" data-title="The ‘Nothing to Hide’ Illusion" aria-label="Open The ‘Nothing to Hide’ Illusion">
+            <img src="when-the-plate-reader-misreads.png" alt="The ‘Nothing to Hide’ Illusion — Editorial cartoon" loading="lazy"><span class="expand">View full comic ↗</span>
           </button>
-          <div class="comic-info"><span class="tag">Weber County Hive • Editorial cartoon</span><h3>When The Plate Reader Misreads</h3></div>
+          <div class="comic-info"><span class="tag">Weber County Hive • Editorial cartoon</span><h3>The ‘Nothing to Hide’ Illusion</h3><ul class="story-links"><li><a href="https://weber-county-hive.github.io/Surveillance/">Read the story: The Surveillance series</a></li></ul></div>
         </article>
       </div>
     </section>
 
+    <section class="more-work" id="stories">
+      <p class="kicker">Read the records behind the drawings</p>
+      <h2>The stories behind these cartoons</h2>
+      <div class="more-grid">
+        <a href="https://weber-county-hive.github.io/Surveillance/"><b>Surveillance</b><span>Flock plate readers, searches and misreads</span></a>
+        <a href="https://weber-county-hive.github.io/PIDS-Utah/"><b>PID Research</b><span>Public infrastructure districts and their debt</span></a>
+        <a href="https://weber-county-hive.github.io/Data-Centers/"><b>Data Centers</b><span>Stratos, MIDA and the deals behind them</span></a>
+        <a href="https://weber-county-hive.github.io/Great-Salt-Lake/"><b>Great Salt Lake</b><span>Water, money and the lake</span></a>
+        <a href="https://weber-county-hive.github.io/Unelected-Power/"><b>Unelected Power</b><span>People with public power and no election</span></a>
+        <a href="https://weber-county-hive.github.io/Bill-Tracker/"><b>Bill Tracker</b><span>The bills these cartoons are about</span></a>
+        <a href="https://weber-county-hive.github.io/candidates2026/"><b>2026 Candidates</b><span>Campaign money, race by race</span></a>
+        <a href="https://weber-county-hive.github.io/audits/"><b>Audits</b><span>State and county audits, in full and plain words</span></a>
+      </div>
+      <p class="posted">Update history: posted Sept. 25, 2026. Updated Oct. 17, 2026: Utah Hive Politics branding, posted and updated dates, and "Read the story" links under each cartoon. Card titles now match the titles drawn on the cartoons, "The Founders Visit the Tollbooth" was added, and where a cartoon had more than one version, the page now shows the most accurate one. Earlier versions stay in the repo. No cartoons were removed.</p>
+    </section>
     <section class="about" id="about">
       <div><p class="kicker">Why comics?</p><h2>Because the fine print deserves a punchline.</h2></div>
       <div><p>Weber County Hive uses public documents, meeting records, campaign disclosures, and the words of public officials to explain what is happening in Utah government.</p><a href="mailto:webercountyhive@gmail.com?subject=Research%20tip">Have something we should look into? Send us a tip →</a></div>
@@ -262,6 +312,8 @@
   </main>
 
   <footer><strong>WEBER COUNTY HIVE</strong><span>Facts first. Satire second.</span><span>© 2026 Weber County Hive</span></footer>
+<div class="hb-foot"><img src="hive-bee.png" alt=""><span class="hb-name">Utah Hive Politics</span><span class="hb-sub">from the publisher of The Weber County Hive</span><span class="hb-tag">Independent · Accountability · Journalism</span></div>
+
 
   <dialog id="lightbox" aria-labelledby="lightbox-title">
     <div class="dialog-bar"><h2 id="lightbox-title"></h2><button id="close-lightbox" aria-label="Close comic">×</button></div>

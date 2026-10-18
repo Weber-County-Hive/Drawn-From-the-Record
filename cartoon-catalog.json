@@ -1,15 +1,14 @@
 [
   {
-    "title": "Appeal To The State Tax Commission",
+    "title": "The Incorporation Math",
     "file": "appeal-to-the-state-tax-commission.png",
-    "status": "revision",
+    "status": "collection",
     "topics": [
-      "government",
-      "revision"
+      "government"
     ]
   },
   {
-    "title": "Capitol Fortune A New Authority",
+    "title": "Capitol Fortunes: Today’s Utah Prediction",
     "file": "capitol-fortune-a-new-authority.png",
     "status": "collection",
     "topics": [
@@ -44,12 +43,12 @@
     ]
   },
   {
-    "title": "Crowning The Housing Czar",
+    "title": "Mirror, Mirror: The Crowning of the Housing Czar",
     "file": "crowning-the-housing-czar.png",
-    "status": "revision",
+    "status": "collection",
     "topics": [
-      "housing",
-      "revision"
+      "mirror",
+      "housing"
     ]
   },
   {
@@ -62,7 +61,7 @@
     ]
   },
   {
-    "title": "Founders Visit the Tollbooth",
+    "title": "The Founders Visit the Tollbooth",
     "file": "founders-inspect-utah-s-plate-reader.png",
     "status": "collection",
     "topics": [
@@ -70,7 +69,7 @@
     ]
   },
   {
-    "title": "Honest Abe\u2019s Modern Stop",
+    "title": "Honest Abe’s Modern Stop",
     "file": "honest-abe-s-modern-stop.png",
     "status": "collection",
     "topics": [
@@ -86,16 +85,16 @@
     ]
   },
   {
-    "title": "Housing Czar Jester: This Is All a Joke",
+    "title": "Mirror, Mirror: The Crowning of the Housing Czar (jester version, replaced by the sourced version)",
     "file": "mirror-mirror-crowning-the-housing-czar.png",
-    "status": "collection",
+    "status": "revision",
     "topics": [
       "mirror",
       "housing"
     ]
   },
   {
-    "title": "Mirror Mirror Fiscal Accountability",
+    "title": "Mirror Mirror: Fiscal Accountability",
     "file": "mirror-mirror-fiscal-accountability.png",
     "status": "collection",
     "topics": [
@@ -103,7 +102,7 @@
     ]
   },
   {
-    "title": "Mirror Mirror Local Control",
+    "title": "Mirror Mirror: Local Control",
     "file": "mirror-mirror-local-control.png",
     "status": "collection",
     "topics": [
@@ -111,7 +110,7 @@
     ]
   },
   {
-    "title": "Mirror Mirror The Water Test",
+    "title": "Mirror, Mirror: The Water Test",
     "file": "mirror-mirror-the-water-test.png",
     "status": "collection",
     "topics": [
@@ -128,7 +127,7 @@
     ]
   },
   {
-    "title": "Mirror Mirror: Utah\u2019s Housing Czar",
+    "title": "Mirror, Mirror: The Housing Czar",
     "file": "mirror-mirror-utah-s-housing-czar.png",
     "status": "collection",
     "topics": [
@@ -137,7 +136,7 @@
     ]
   },
   {
-    "title": "Mirror Mirror: What Is Happening to My Vote?",
+    "title": "Mirror, Mirror: What Is Happening to My Vote at All?",
     "file": "mirror-record-and-quiet-reflection.png",
     "status": "collection",
     "topics": [
@@ -145,7 +144,7 @@
     ]
   },
   {
-    "title": "Out Of State Eyes On Utah Streets",
+    "title": "The Out-of-State Commute Watch",
     "file": "out-of-state-eyes-on-utah-streets.png",
     "status": "collection",
     "topics": [
@@ -153,7 +152,7 @@
     ]
   },
   {
-    "title": "Panel Four Data Sharing Rules Corrected",
+    "title": "Carpenter’s Unfinished Road Map",
     "file": "panel-four-data-sharing-rules-corrected.png",
     "status": "revision",
     "topics": [
@@ -162,7 +161,7 @@
     ]
   },
   {
-    "title": "The Innocence Homework Assignment \u2014 Receipts and Voided Summons",
+    "title": "The Innocence Homework Assignment",
     "file": "receipts-routes-and-a-voided-summons.png",
     "status": "collection",
     "topics": [
@@ -178,7 +177,7 @@
     ]
   },
   {
-    "title": "Strangers Paper Trails Bond Approval",
+    "title": "The Stranger Meeting",
     "file": "strangers-paper-trails-bond-approval.png",
     "status": "collection",
     "topics": [
@@ -186,7 +185,7 @@
     ]
   },
   {
-    "title": "Stratos Family Reunion In Hansel Valley",
+    "title": "The Stratos ‘Family Reunion’",
     "file": "stratos-family-reunion-in-hansel-valley.png",
     "status": "collection",
     "topics": [
@@ -194,23 +193,7 @@
     ]
   },
   {
-    "title": "The $270K Corporate Express",
-    "file": "the-270k-corporate-express.png",
-    "status": "collection",
-    "topics": [
-      "money"
-    ]
-  },
-  {
-    "title": "The $270K Campaign Pipeline",
-    "file": "the-270k-utah-campaign-pipeline.png",
-    "status": "collection",
-    "topics": [
-      "money"
-    ]
-  },
-  {
-    "title": "The 40 Year Dream Home Trap",
+    "title": "The ‘Dream Home’ Trap: A PID Story",
     "file": "the-40-year-dream-home-trap.png",
     "status": "collection",
     "topics": [
@@ -218,7 +201,7 @@
     ]
   },
   {
-    "title": "The Fourth Amendment\u2019s Settings Menu",
+    "title": "The Fourth Amendment’s Settings Menu",
     "file": "the-fourth-amendment-s-settings-menu.png",
     "status": "collection",
     "topics": [
@@ -234,7 +217,7 @@
     ]
   },
   {
-    "title": "The Great Salt Lake Rescue",
+    "title": "The Great Salt Lake ‘Rescue’",
     "file": "the-great-salt-lake-rescue.png",
     "status": "collection",
     "topics": [
@@ -242,7 +225,7 @@
     ]
   },
   {
-    "title": "The Honor System Speed Trap",
+    "title": "The Honor-System Speed Trap",
     "file": "the-honor-system-speed-trap.png",
     "status": "collection",
     "topics": [
@@ -250,9 +233,9 @@
     ]
   },
   {
-    "title": "The Incorporation Math",
+    "title": "The Incorporation Math (earlier \"special bill\" version)",
     "file": "the-incorporation-math.png",
-    "status": "collection",
+    "status": "revision",
     "topics": [
       "government"
     ]
@@ -266,7 +249,7 @@
     ]
   },
   {
-    "title": "The Ranchside Data Center Surprise",
+    "title": "The Surprise Project",
     "file": "the-ranchside-data-center-surprise.png",
     "status": "collection",
     "topics": [
@@ -300,15 +283,15 @@
     ]
   },
   {
-    "title": "The Thanksgiving Drive Nightmare",
+    "title": "The Thanksgiving Drive Nightmare (earlier version, highway sign reads Salt Lake City)",
     "file": "the-thanksgiving-drive-nightmare.png",
-    "status": "collection",
+    "status": "revision",
     "topics": [
       "privacy"
     ]
   },
   {
-    "title": "The Two Door Surveillance Policy",
+    "title": "The Two-Door Surveillance Policy",
     "file": "the-two-door-surveillance-policy.png",
     "status": "collection",
     "topics": [
@@ -316,7 +299,7 @@
     ]
   },
   {
-    "title": "Three PACs, One Treasurer, One Ring",
+    "title": "Kyle Palmer’s One-Man PAC Circus",
     "file": "three-pacs-one-treasurer-one-ring.png",
     "status": "collection",
     "topics": [
@@ -324,7 +307,7 @@
     ]
   },
   {
-    "title": "Tracing Revenue Through MIDA",
+    "title": "The Ten-Year Fire Truck Parade",
     "file": "tracing-revenue-through-mida.png",
     "status": "revision",
     "topics": [
@@ -333,7 +316,7 @@
     ]
   },
   {
-    "title": "Utah Pac Public Record Update",
+    "title": "The $270K Pipeline",
     "file": "utah-pac-public-record-update.png",
     "status": "revision",
     "topics": [
@@ -359,16 +342,16 @@
     ]
   },
   {
-    "title": "West 80 Toward Oakland",
+    "title": "The Thanksgiving Drive Nightmare",
     "file": "west-80-toward-oakland.png",
-    "status": "revision",
+    "status": "collection",
     "topics": [
       "privacy",
       "revision"
     ]
   },
   {
-    "title": "When The Plate Reader Misreads",
+    "title": "The ‘Nothing to Hide’ Illusion",
     "file": "when-the-plate-reader-misreads.png",
     "status": "collection",
     "topics": [
