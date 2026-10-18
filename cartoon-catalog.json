@@ -357,5 +357,21 @@
     "topics": [
       "privacy"
     ]
+  },
+  {
+    "title": "The $0 Hotel",
+    "file": "the-0-hotel.png",
+    "status": "collection",
+    "topics": [
+      "government"
+    ]
+  },
+  {
+    "title": "Nobody Checked",
+    "file": "nobody-checked.png",
+    "status": "collection",
+    "topics": [
+      "money"
+    ]
   }
 ]
