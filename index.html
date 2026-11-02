@@ -12,6 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Libre+Franklin:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css?v=20261006">
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   <style>
 .hb-bar{background:#0d0b0a;border-bottom:1px solid #3a2f1c;padding:10px 20px;}
 .hb-bar a{display:flex;align-items:center;gap:12px;max-width:1100px;margin:0 auto;text-decoration:none;}
@@ -35,35 +36,82 @@
 .more-grid a{display:block;border:2px solid var(--ink);background:var(--white);padding:16px 18px;text-decoration:none;box-shadow:4px 4px 0 var(--ink)}
 .more-grid b{display:block;font-family:"Archivo Black";font-size:1.05rem}
 .more-grid span{color:var(--muted);font-size:.92rem}
+.hb-line-top{display:block;font-family:Georgia,serif;color:#e8d9b5;font-size:13px;margin-top:4px}
+.dr-slim{background:#191a18;color:#f4c43d;padding:9px 20px;font:700 13px "Courier New",monospace;letter-spacing:.06em;text-transform:uppercase;display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px 14px}
+.dr-slim a{color:#fffdf8;text-decoration:none}
+#dr-tools{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 0}
+.dr-tool{display:inline-block;font:700 15px "Libre Franklin",Arial,sans-serif;color:#191a18;background:#fffdf8;border:2px solid #191a18;border-radius:4px;padding:9px 13px;text-decoration:none;cursor:pointer;line-height:1.2;box-shadow:3px 3px 0 #191a18}
+.dr-cnchip b{color:#b92f28;font-family:"Courier New",monospace}
+.dr-shelfwrap{background:#191a18;color:#f6f2e8;padding:26px 20px 30px;font-size:16px;line-height:1.5}
+.dr-shelfwrap .in{max-width:900px;margin:0 auto}
+#dr-shelf{border:2px dashed #f4c43d;border-radius:10px;padding:16px 18px}
+.dr-cn-big{font:700 17px "Courier New",monospace;margin-bottom:12px}.dr-cn-big b{color:#f4c43d}
+.dr-nav{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-bottom:12px}
+.dr-nav-btn{flex:1;min-width:220px;background:#2a2b27;border:1px solid #f4c43d;border-radius:8px;padding:12px 14px;color:#fff;text-decoration:none;font-size:16px}.dr-nav-btn b{color:#f4c43d;font-family:"Courier New",monospace}.dr-off{opacity:.5}
+.dr-list summary{cursor:pointer;font-weight:700;padding:6px 0}.dr-list ol{list-style:none;margin:6px 0 0;padding:0}.dr-list li{padding:6px 0;border-bottom:1px solid #3a3b36}.dr-list a{color:#fff;text-decoration:none}
+.dr-shelf-head{color:#f4c43d;font:700 13px "Courier New",monospace;letter-spacing:.1em}.dr-cn{font-family:"Courier New",monospace;color:#f4c43d;margin-right:6px}
+.dr-find{margin:14px 0 4px}.dr-find label{display:block;font-weight:700;margin-bottom:6px}.dr-find div{display:flex;gap:8px;flex-wrap:wrap}.dr-find input{flex:1;min-width:0;width:100%;padding:12px 14px;font-size:17px;border:2px solid #f4c43d;border-radius:6px}.dr-find button{padding:12px 18px;font-size:16px;font-weight:700;background:#f4c43d;color:#191a18;border:0;border-radius:6px;cursor:pointer}
+.dr-search{font-size:15px;margin-top:12px}.dr-search a,.dr-search b{color:#f4c43d}
+.hb-line{max-width:720px;margin:14px auto 0;color:#e8d9b5;font-size:15.5px;line-height:1.5}
+.hb-tips{margin:16px 0 4px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.hb-btn{display:inline-block;border:2px solid #d4af37;background:#d4af37;color:#0d0b0a;font:700 15px Georgia,serif;padding:10px 18px;border-radius:6px;text-decoration:none}
+.hb-btn2{background:transparent;color:#d4af37}
+.hb-small{font-size:12.5px;color:#8a7650;margin:6px 0 0}
+.dr-totop{display:none;position:fixed;right:16px;bottom:16px;z-index:50;background:#191a18;color:#fff;border:2px solid #f4c43d;border-radius:24px;padding:10px 16px;font:700 15px Arial,sans-serif;text-decoration:none;box-shadow:0 2px 8px rgba(0,0,0,.25)}
+@media(max-width:600px){.hb-line-top{font-size:11.5px}}
+@media print{#dr-tools,.dr-totop{display:none}}
+
+/* Nov. 1, 2026: same look as the other Hive repos */
+body{background:#ffffff;color:#13233F}
+.dr-slim{background:#0B1A30;color:#F3E3B3}
+.dr-slim a{color:#fff}
+.intro.dr-hero{display:block;min-height:0;padding:34px 0 30px;background:linear-gradient(135deg,#13233F,#1E3560);color:#fff;border-bottom:5px solid #D4A62A}
+.dr-wrap{max-width:1180px;margin:0 auto;padding:0 clamp(18px,4vw,48px)}
+.dr-kicker{font:600 12px "Courier New",monospace;letter-spacing:.16em;text-transform:uppercase;color:#F3E3B3;margin:0}
+.intro.dr-hero h1{font-family:"Playfair Display",Georgia,serif;font-size:clamp(30px,5vw,44px);line-height:1.15;letter-spacing:0;margin:8px 0 10px;color:#fff}
+.intro.dr-hero .lede{color:#E6EAF2;font-weight:400;font-size:1.1rem;max-width:720px;margin:0}
+.intro.dr-hero .posted{color:#E6EAF2;opacity:.9;font-weight:400;margin-top:12px}
+.dr-tool{color:#13233F;background:#fff;border:1px solid #DDD6C4;border-radius:6px;box-shadow:none}
+.dr-cnchip b{color:#9c7620}
+.gallery-section{background:#ffffff;border-top:0}
+.section-heading{border-bottom:1px solid #DDD6C4}
+.section-heading h2,.about h2,.more-work h2{font-family:"Playfair Display",Georgia,serif;letter-spacing:0;color:#13233F}
+.section-heading h2,.about h2{font-size:clamp(1.8rem,4vw,2.6rem)}
+.filter{border:1px solid #DDD6C4;border-radius:999px;background:#fff;color:#13233F;font-weight:600}
+.filter:hover,.filter.active{background:#13233F;color:#fff;border-color:#13233F}
+.comic-card{border:1px solid #DDD6C4;border-radius:8px;overflow:hidden;box-shadow:none}
+.comic-image{border-bottom:1px solid #DDD6C4;background:#fff}
+.comic-card,.comic-info{background:#fff}
+.comic-image{height:auto!important;display:block}.comic-image img{height:auto!important;display:block}
+.more-work{background:#F4F7FB!important}
+.comic-info h3{font-family:"Playfair Display",Georgia,serif;color:#13233F}
+.tag{background:#F3E3B3;color:#13233F;border-radius:10px}
+.more-work{border-top:1px solid #DDD6C4}
+.more-grid a{border:1px solid #DDD6C4;border-radius:8px;box-shadow:none;background:#fff}
+.more-grid b{font-family:"Playfair Display",Georgia,serif;color:#13233F}
+.about{background:#fff;border-top:1px solid #DDD6C4;border-bottom:0;border-left:5px solid #D4A62A}
+.dr-shelfwrap{background:#13233F;color:#E6EAF2}
+#dr-shelf{border-color:#D4A62A}
+.dr-cn-big b,.dr-shelf-head,.dr-cn,.dr-nav-btn b,.dr-search a,.dr-search b{color:#D4A62A}
+.dr-nav-btn{background:#0B1A30;border-color:#D4A62A}
+.dr-find input{border-color:#D4A62A}.dr-find button{background:#D4A62A;color:#13233F}
+.dr-totop{background:#13233F;border-color:#D4A62A}
+@media(max-width:700px){.comic-card,.comic-card.featured,.comic-card.wide{box-shadow:none}}
   </style>
 </head>
 <body>
-<div class="hb-bar"><a href="https://webercountyhive.substack.com/" target="_blank" rel="noopener"><img src="uhp-badge.png" alt="Utah Hive Politics logo"><span><span class="hb-name">Utah Hive Politics</span><span class="hb-sub">from the publisher of The Weber County Hive</span></span></a></div>
-  <header class="site-header">
-    <a class="brand" href="#top" aria-label="Weber County Hive comics home">
-      <span class="brand-mark" aria-hidden="true">UH</span>
-      <span><strong>WEBER COUNTY HIVE</strong><small>Public records. Sharp pencils.</small></span>
-    </a>
-    <nav aria-label="Main navigation">
-      <a href="#comics">Comics</a>
-      <a href="#stories">Stories</a>
-      <a href="#about">About</a>
-      <a class="nav-button" href="mailto:webercountyhive@gmail.com?subject=Comic%20idea">Send a tip</a>
-    </nav>
-  </header>
+<div class="hb-bar"><a href="https://webercountyhive.substack.com/" target="_blank" rel="noopener"><img src="uhp-badge.png" alt="Utah Hive Politics logo"><span><span class="hb-name">Utah Hive Politics</span><span class="hb-sub">from the publisher of The Weber County Hive</span><span class="hb-line-top">The people's publication. We investigate what's best for the public as a whole, not any party or special interest.</span></span></a></div>
+<div class="dr-slim"><span>Drawn From the Record · DR 000.01</span><span><a href="#comics">Comics</a> · <a href="#stories">Stories</a> · <a href="#about">About</a> · <a href="https://weber-county-hive.github.io/-weber-county-hive-index/">← Hive library (every repo)</a></span></div>
+
 
   <main id="top">
-    <section class="intro" aria-labelledby="page-title">
-      <div class="intro-copy">
-        <p class="eyebrow">Editorial cartoons • Utah politics</p>
-        <h1 id="page-title">THE RECORD,<br><span>DRAWN OUT.</span></h1>
-        <p class="lede">Our comics turn complicated public records into pictures that are harder to ignore.</p>
-        <p class="posted">Posted Sept. 25, 2026 · Updated Oct. 18, 2026</p>
-      </div>
-      <div class="issue-stamp" aria-label="Independent Utah reporting">
-        <span>INDEPENDENT</span><strong>UTAH</strong><span>REPORTING</span>
-      </div>
-    </section>
+    <section class="intro dr-hero" aria-labelledby="page-title"><div class="dr-wrap">
+        <p class="dr-kicker">Drawn From the Record · Editorial cartoons · Utah politics</p>
+        <h1 id="page-title">The Record, Drawn Out</h1>
+        <p class="lede">Our comics turn complicated public records into pictures that are harder to ignore. Facts first. Satire second.</p>
+        <p class="posted">Posted Sept. 25, 2026 · Updated Nov. 1, 2026 · Call number DR 000.01</p>
+        <div id="dr-tools"></div>
+    </div></section>
 
     <section class="gallery-section" id="comics" aria-labelledby="gallery-title">
       <div class="section-heading">
@@ -199,7 +247,7 @@
           <button class="comic-image" data-image="stratos-family-reunion-in-hansel-valley.png" data-title="The Stratos ‘Family Reunion’" aria-label="Open The Stratos ‘Family Reunion’">
             <img src="stratos-family-reunion-in-hansel-valley.png" alt="The Stratos ‘Family Reunion’ — Editorial cartoon" loading="lazy"><span class="expand">View full comic ↗</span>
           </button>
-          <div class="comic-info"><span class="tag">Weber County Hive • Editorial cartoon</span><h3>The Stratos ‘Family Reunion’</h3><ul class="story-links"><li><a href="https://weber-county-hive.github.io/Data-Centers/stratos.html">Read the story: Stratos: Everything We've Reported</a></li></ul></div>
+          <div class="comic-info"><span class="tag">Weber County Hive • Editorial cartoon</span><h3>The Stratos ‘Family Reunion’</h3><ul class="story-links"><li><a href="https://webercountyhive-coder.github.io/Data-Centers/stratos.html">Read the story: Stratos: Everything We've Reported</a></li></ul></div>
         </article>
 
 
@@ -250,7 +298,7 @@
           <button class="comic-image" data-image="the-ranchside-data-center-surprise.png" data-title="The Surprise Project" aria-label="Open The Surprise Project">
             <img src="the-ranchside-data-center-surprise.png" alt="The Surprise Project — Editorial cartoon" loading="lazy"><span class="expand">View full comic ↗</span>
           </button>
-          <div class="comic-info"><span class="tag">Weber County Hive • Editorial cartoon</span><h3>The Surprise Project</h3><ul class="story-links"><li><a href="https://weber-county-hive.github.io/Data-Centers/weber-hive-dc-stratos-land.html">Read the story: Do You Have The Land?</a></li></ul></div>
+          <div class="comic-info"><span class="tag">Weber County Hive • Editorial cartoon</span><h3>The Surprise Project</h3><ul class="story-links"><li><a href="https://webercountyhive-coder.github.io/Data-Centers/weber-hive-dc-stratos-land.html">Read the story: Do You Have The Land?</a></li></ul></div>
         </article>
 
         <article class="comic-card" data-tags="privacy">
@@ -278,7 +326,7 @@
           <button class="comic-image" data-image="utah-pac-public-record-update.png" data-title="The $270K Pipeline" aria-label="Open The $270K Pipeline">
             <img src="utah-pac-public-record-update.png" alt="The $270K Pipeline — Earlier / alternate version" loading="lazy"><span class="expand">View full comic ↗</span>
           </button>
-          <div class="comic-info"><span class="tag">Weber County Hive • Editorial cartoon</span><h3>The $270K Pipeline</h3><ul class="story-links"><li><a href="https://weber-county-hive.github.io/Data-Centers/data-center-industry-money.html">Read the story: Data Center Industry Money in Utah Politics</a></li><li><a href="https://weber-county-hive.github.io/candidates2026/sd6-tran-neal.html">Read the story: SD-6: Tran vs. Neal</a></li></ul></div>
+          <div class="comic-info"><span class="tag">Weber County Hive • Editorial cartoon</span><h3>The $270K Pipeline</h3><ul class="story-links"><li><a href="https://webercountyhive-coder.github.io/Data-Centers/data-center-industry-money.html">Read the story: Data Center Industry Money in Utah Politics</a></li><li><a href="https://weber-county-hive.github.io/candidates2026/sd6-tran-neal.html">Read the story: SD-6: Tran vs. Neal</a></li></ul></div>
         </article>
 
         <article class="comic-card" data-tags="government">
@@ -310,14 +358,14 @@
       <div class="more-grid">
         <a href="https://weber-county-hive.github.io/Surveillance/"><b>Surveillance</b><span>Flock plate readers, searches and misreads</span></a>
         <a href="https://weber-county-hive.github.io/PIDS-Utah/"><b>PID Research</b><span>Public infrastructure districts and their debt</span></a>
-        <a href="https://weber-county-hive.github.io/Data-Centers/"><b>Data Centers</b><span>Stratos, MIDA and the deals behind them</span></a>
+        <a href="https://webercountyhive-coder.github.io/Data-Centers/"><b>Data Centers</b><span>Stratos, MIDA and the deals behind them</span></a>
         <a href="https://weber-county-hive.github.io/Great-Salt-Lake/"><b>Great Salt Lake</b><span>Water, money and the lake</span></a>
         <a href="https://weber-county-hive.github.io/Unelected-Power/"><b>Unelected Power</b><span>People with public power and no election</span></a>
         <a href="https://weber-county-hive.github.io/Bill-Tracker/"><b>Bill Tracker</b><span>The bills these cartoons are about</span></a>
         <a href="https://weber-county-hive.github.io/candidates2026/"><b>2026 Candidates</b><span>Campaign money, race by race</span></a>
         <a href="https://weber-county-hive.github.io/audits/"><b>Audits</b><span>State and county audits, in full and plain words</span></a>
       </div>
-      <p class="posted">Update history: posted Sept. 25, 2026. Updated Oct. 17, 2026: Utah Hive Politics branding, posted and updated dates, and "Read the story" links under each cartoon. Card titles now match the titles drawn on the cartoons, "The Founders Visit the Tollbooth" was added, and where a cartoon had more than one version, the page now shows the most accurate one. Earlier versions stay in the repo. No cartoons were removed. Updated Oct. 18, 2026: added "The $0 Hotel," on the MIDA-owned Grand Hyatt Deer Valley hotel space and the private condos in the same building, and "Nobody Checked," on the State Auditor's iMpact Utah / MEP review.</p>
+      <p class="posted">Update history: posted Sept. 25, 2026. Updated Oct. 17, 2026: Utah Hive Politics branding, posted and updated dates, and "Read the story" links under each cartoon. Card titles now match the titles drawn on the cartoons, "The Founders Visit the Tollbooth" was added, and where a cartoon had more than one version, the page now shows the most accurate one. Earlier versions stay in the repo. No cartoons were removed. Updated Oct. 18, 2026: added "The $0 Hotel," on the MIDA-owned Grand Hyatt Deer Valley hotel space and the private condos in the same building, and "Nobody Checked," on the State Auditor's iMpact Utah / MEP review. Updated Nov. 1, 2026: the same look as the other Hive repos (one header and one footer), call number DR 000.01 and the Hive library shelf at the bottom, page tools, the full tip and correction footer, and fixed links to the Data Centers repo. Cartoons now show in full in the gallery. No cartoons were changed.</p>
     </section>
     <section class="about" id="about">
       <div><p class="kicker">Why comics?</p><h2>Because the fine print deserves a punchline.</h2></div>
@@ -325,8 +373,8 @@
     </section>
   </main>
 
-  <footer><strong>WEBER COUNTY HIVE</strong><span>Facts first. Satire second.</span><span>© 2026 Weber County Hive</span></footer>
-<div class="hb-foot"><img src="hive-bee.png" alt=""><span class="hb-name">Utah Hive Politics</span><span class="hb-sub">from the publisher of The Weber County Hive</span><span class="hb-tag">Independent · Accountability · Journalism</span></div>
+<div class="dr-shelfwrap"><div class="in"><div id="dr-shelf"></div></div></div>
+<div class="hb-foot"><img src="hive-bee.png" alt=""><span class="hb-name">Utah Hive Politics</span><span class="hb-sub">from the publisher of The Weber County Hive</span><span class="hb-tag">Independent · Accountability · Journalism</span><p class="hb-line">The Weber County Hive and Utah Hive Politics: the people's publication. We investigate what's best for the public as a whole, not for any party or special interest group.</p><p class="hb-tips"><a class="hb-btn" href="https://weber-county-hive.github.io/-weber-county-hive-index/tips.html#send">Send a tip</a><a class="hb-btn hb-btn2" href="https://weber-county-hive.github.io/-weber-county-hive-index/tips.html">Tips we checked</a><a class="hb-btn hb-btn2" href="https://weber-county-hive.github.io/-weber-county-hive-index/tips.html#send">See a mistake? Tell us</a></p><p class="hb-small">We never name tipsters. When we correct a page, the fix and its date are shown on the page.</p><p class="hb-small">© 2026 Weber County Hive · Drawn From the Record: facts first, satire second.</p><p class="hb-small"><a href="https://webercountyhive.substack.com/" style="color:#d4af37">webercountyhive.substack.com</a></p></div>
 
 
   <dialog id="lightbox" aria-labelledby="lightbox-title">
@@ -334,6 +382,7 @@
     <img id="lightbox-image" src="" alt="">
   </dialog>
   <script src="script.js?v=20261006"></script>
+<script src="dr-shelf.js?v=1"></script>
 <script data-goatcounter="https://weberhive.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
